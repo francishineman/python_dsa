@@ -1,15 +1,14 @@
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
-        """
 
-        for n,i in enumerate(nums):
-            for m,j in enumerate(nums):
-                if n == m:
+    def twoSum(nums, target):
+        for i, n in enumerate(nums):
+            for j, m in enumerate(nums):
+                if i == j:
                     continue
-                if target == i + j:
-                    return (n, m)
+                if target == n + m:
+                    return(n,m)
                     break
+
+# num_list = [3,6,1,2,7,8,4,5,9]
+# target = 17
+        
